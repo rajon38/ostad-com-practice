@@ -40,7 +40,7 @@ const productSchema = new Schema(
             data: Buffer,
             contentType: String
         },
-        Shipping: {
+        shipping: {
             required: false,
             type: Boolean
         }
@@ -48,5 +48,5 @@ const productSchema = new Schema(
     {timestamps: true, versionKey: false}
 );
 
-const Product = mongoose.model("product", productSchema);
+const Product = mongoose.model("products", productSchema);
 module.exports = Product;
