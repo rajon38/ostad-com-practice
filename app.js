@@ -33,7 +33,7 @@ mongoose.set('strictQuery', true)
     });
 
 //routing implement
-readdirSync("./Routes").map(r => app.use("/api/v1", require(`./Routes/${r}`)));
+readdirSync("./src/Routes").map(r => app.use("/api/v1", require(`./src/Routes/${r}`)));
 
 //undefined route implement
 app.use("*", (req, res) => {
